@@ -1,0 +1,85 @@
+public class Main {
+    public static void main(String[] args) {
+        // Задача 1: Присвоение значений и вывод в консоль
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763789;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 2: Увеличение каждой переменной на 4
+        dog = dog + 4;
+        cat = cat + 4;
+        paper = paper + 4;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 3: Уменьшение переменных
+        dog = dog - 3.5;
+        cat = cat - 1.6;
+        paper = paper - 7639;
+
+        System.out.println(dog);
+        System.out.println(cat);
+        System.out.println(paper);
+
+        // Задача 4: Работа с переменной friend
+        var friend = 19;
+        System.out.println(friend); // Исходное значение
+
+        friend = friend + 2;
+        System.out.println(friend); // После увеличения на 2
+
+        friend = friend / 7;
+        System.out.println(friend); // После деления на 7
+
+        // Задача 5: Работа с переменной frog
+        var frog = 3.5;
+        System.out.println(frog); // Исходное значение
+
+        frog = frog * 10;
+        System.out.println(frog); // После умножения на 10
+
+        frog = frog / 3.5;
+        System.out.println(frog); // После деления на 3.5
+
+        frog = frog + 4;
+        System.out.println(frog); // После прибавления 4
+
+        // Задача 6: Масса боксёров
+        var weight1 = 78.2;
+        var weight2 = 82.7;
+
+        var totalWeight = weight1 + weight2;
+        System.out.println("Общая масса двух бойцов: " + totalWeight + " кг");
+
+        var weightDifference = weight2 - weight1;
+        System.out.println("Разница между массами бойцов: " + weightDifference + " кг");
+
+        // Задача 7: Остаток от деления масс
+        var bigger = Math.max(weight1, weight2);
+        var smaller = Math.min(weight1, weight2);
+
+        var remainder = (int) (bigger % smaller);
+        System.out.println("Остаток от деления: " + remainder);
+
+        // Задача 8: Расчёт часов работы и сотрудников
+        var totalHours = 640;
+        var hoursPerEmployee = 8;
+
+        var employeesCount = totalHours / hoursPerEmployee;
+        System.out.println("Всего работников в компании — " + employeesCount + " человек");
+
+
+        var newEmployeesCount = employeesCount + 94;
+        var newTotalHours = newEmployeesCount * hoursPerEmployee;
+
+        System.out.println("Если в компании работает " + newEmployeesCount +
+                " человек, то всего " + newTotalHours +
+                " часов работы может быть поделено между сотрудниками");
+    }
+}
